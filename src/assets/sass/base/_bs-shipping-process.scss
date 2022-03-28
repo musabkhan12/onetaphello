@@ -1,0 +1,229 @@
+
+
+
+
+.bs-shipping-process {
+  .billing {
+    padding-bottom: 30px;
+  }
+  .icon {
+    cursor: pointer;
+  }
+  .first {
+    padding: 0 30px;
+    z-index: 1;
+  }
+  .user-detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .user-icn {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: #225acb;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+      font-size: 30px;
+      color: #ffffff;
+      &::before {
+        color: #ffffff;
+      }
+    }
+  }
+  .user-detl {
+    margin-left: 10px;
+    .name {
+      margin-bottom: 0;
+      font-weight: 600;
+      font-size: 16px;
+      color: $blackClr;
+    }
+    .email {
+      margin-bottom: 0;
+      font-weight: 400;
+      font-size: 14px;
+      color: rgba(0 0 0 / 60%);
+    }
+  }
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    .bs-btn {
+      &.typ-link {
+        .icon {
+          font-size: 24px;
+          color: $blackClr;
+          &.icon-edit {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .info {
+      .name {
+        margin-bottom: 0;
+        font-size: 16px;
+        font-weight: $font-semibold;
+      }
+      .subscription {
+        font-size: 14px;
+        word-break: break-word;
+        word-break: break-all;
+      }
+    }
+  }
+  .process-title {
+    font-size: 20px;
+    color: $blackClr;
+    margin: 20px 0;
+    font-weight: $font-semibold;
+    &.typ-two {
+      margin: 30px 0px;
+    }
+  }
+  .select-method {
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 12px;
+    // margin-bottom: 40px;
+    margin-bottom: 10px;
+    .radiobx {
+      border-bottom: 1px solid #e5e5e5;
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+      display: block;
+      &:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+      input {
+        margin-right: 10px;
+      }
+    }
+  }
+  .radio-btm-txt {
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.4);
+  }
+  .add-carts {
+    .prod-bx {
+      margin-right: 0;
+      .ctm-col {
+        padding: 0;
+        &:nth-child(2) {
+          text-align: right;
+        }
+      }
+    }
+    .edit {
+      .icon {
+        font-size: 16px;
+        color: $blackClr;
+      }
+    }
+    .cart-description {
+      display: flex;
+      align-items: flex-start;
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgba($color: #000000, $alpha: 0.15);
+      &.typ-noborder {
+        border: 0;
+      }
+      .image {
+        max-width: 100px;
+      }
+      .cart-small-image {
+        max-width: 100px;
+      }
+      .info {
+        margin-left: 15px;
+        .name,
+        .price {
+          font-size: 16px;
+          color: $blackClr;
+          font-weight: $font-semibold;
+          margin-bottom: 5px;
+        }
+        .subscription {
+          font-size: 14px;
+          color: rgba(0, 0, 0, 0.6);
+          margin-bottom: 5px;
+        }
+      }
+      .remove {
+        margin-left: auto;
+        .icon {
+          font-size: 24px;
+        }
+      }
+    }
+    
+  }
+  .address-section{
+    .shipping-address{
+      margin-bottom: 15px;
+      word-break: break-all;
+      text-transform: capitalize;
+      .title{
+        font-weight: $font-semibold;
+      }
+      .address-value{
+
+      }
+    }
+    .change{
+      .bs-para{
+        display: inline-block;
+        margin-right: 15px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .buttons{
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: $tablet-breakpoint) {
+  .bs-shipping-process {
+    padding-right: 0;
+    .user-detail {
+      margin-top: 30px;
+    }
+  }
+}
+@media only screen and (max-width: $mobile-breakpoint) {
+  .bs-shipping-process {
+    padding-right: 0;
+    .bs-btn {
+      &.continue {
+        margin-bottom: 30px;
+      }
+    }
+    .cart-description {
+      flex-direction: column;
+      position: relative;
+      margin-bottom: 0;
+      img {
+        max-width: 100px;
+      }
+      .info {
+        margin-left: 0 !important;
+      }
+      .remove {
+        position: absolute;
+        right: 15px;
+      }
+    }
+  }
+}

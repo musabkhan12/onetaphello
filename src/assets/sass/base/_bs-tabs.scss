@@ -1,0 +1,56 @@
+.bs-tabs {
+  .nav-tabs {
+    border-bottom: none;
+    .nav-item {
+      margin-right: 20px;
+      cursor: pointer;
+      margin-bottom: 10px;
+      #nav-link {
+        color: rgba(0, 0, 0, 0.4);
+        padding: 0.2rem 0;
+        font-weight: $font-semibold;
+        font-size: 14px;
+        &:hover {
+          border-color: #fff;
+          box-shadow: none;
+        }
+        &.active {
+          border-color: transparent;
+          border-bottom: 1px solid;
+          color: $secondayClr;
+        }
+      }
+    }
+  }
+  .tab-content {
+    padding-top: 5px;
+    .tab-pane {
+      .para-description {
+        color: rgba($color: #000000, $alpha: 0.6);
+        font-size: 14px;
+        ul {
+          li {
+            list-style: disc;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: $mobile-breakpoint) {
+  .bs-tabs {
+    padding-top: 20px;
+    .nav-tabs {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none;
+      overflow-x: auto;
+      overflow-y: hidden;
+    }
+    .tab-content {
+      padding-top: 20px;
+    }
+  }
+}

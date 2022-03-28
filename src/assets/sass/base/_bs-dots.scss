@@ -1,0 +1,55 @@
+.bs-dots{
+    position: relative;
+    margin-left: 20%;
+    span{
+        &.blue{
+            &::before{
+                content: '';
+                position: absolute;
+                top: 10px;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background-color: $secondayClr;
+            }
+        }
+        &.green{
+            &::before{
+                content: '';
+                position: absolute;
+                top: 10px;
+                left: 15px;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background-color: #93CB22;
+            }
+        }
+        &.red{
+            &::before{
+                content: '';
+                position: absolute;
+                top: 10px;
+                left: 30px;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background-color: #CB2222;
+            }
+            
+        }
+        &.tblue{
+            &::before{
+                content: '';
+                position: absolute;
+                top: 10px;
+                left: 45px;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background-color: #22CBC5
+            }
+        }
+    }
+    
+}

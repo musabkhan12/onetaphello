@@ -1,0 +1,9 @@
+.mod-bg{
+   background: linear-gradient(to right, $primaryClr 50%, $bgColor 50%);
+}
+
+@media only screen and (max-width: $tablet-breakpoint){
+    .mod-bg{
+        background: transparent;
+    }
+}

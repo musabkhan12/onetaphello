@@ -1,0 +1,17 @@
+.bs-search {
+  display: none;
+  &.show {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background: #ffffff;
+    z-index: 1000;
+    top: 75px;
+  }
+  .close {
+    text-align: right;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+}

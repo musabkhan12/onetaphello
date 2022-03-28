@@ -1,0 +1,51 @@
+.mod-accordian{
+    .accordion{
+        border: none;
+        .accordion__item{
+            .accordion__heading{
+                .accordion__button{
+                    background: $primaryClr;
+                    font-size: 16px;
+                    color: $blackClr;
+                    font-weight: $font-semibold;
+                    position: relative;
+                    padding: 0;
+                    &::before{
+                        display: none;
+                    }
+                    &::after{
+                        display: inline-block;
+                        content: '\e920';
+                        font-family: 'icomoon';
+                        color: $blackClr;
+                        position: absolute;
+                        right: 5px;
+                    }
+                }
+                .accordion__button[aria-expanded='true']::before, .accordion__button[aria-selected='true']::before {
+                    display: none;
+                }
+                .accordion__button[aria-expanded='true']::after, .accordion__button[aria-selected='true']::after {
+                    content: '\e92a';
+                    font-size: 2px;
+                    position: absolute;
+                    right: 5px;
+                    top: 12px;
+                }
+            }
+            .accordion__panel{
+                padding: 10px 25px 0 0;
+                p{
+                    color: rgba($color: #000000, $alpha: 0.6);
+                    font-size: 16px;
+                }
+            }
+        }
+    }    
+}
+.divider{
+    display: block;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.15);
+    padding-top: 10px;
+    margin-bottom: 20px;
+}

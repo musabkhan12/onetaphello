@@ -1,0 +1,37 @@
+.bs-info-bx {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid lightgray;
+  &:last-child {
+    border-bottom: none;
+  }
+  .cart-products {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .prod-pic-parent {
+      img {
+        max-width: 250px;
+      }
+    }
+    .content {
+      .title {
+        font-size: 16px;
+        font-family: $font-semibold;
+      }
+      .sub-title {
+      }
+      .description {
+      }
+    }
+  }
+}
+@media only screen and (max-width: $tablet-breakpoint) {
+  .bs-info-bx {
+    .cart-products {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+}

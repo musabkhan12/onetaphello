@@ -1,0 +1,90 @@
+.lyt-section {
+  padding: 60px 0;
+  overflow: hidden;
+  &.bg-light-gray {
+    background-color: #FAFAFA;
+  }
+  &.typ-table {
+    padding: 70px 0;
+    min-height: 80vh;
+  }
+  &.typ-our-prod{
+    padding-top: 15px;
+  }
+  &.typ-subscribe{
+    padding: 40px 0;
+  }
+  &.typ-cart{
+    margin-bottom: 50px;
+  }
+  &.typ-banner{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: #F3F8FF;
+  }
+  &.typ-light-blue {
+    background-color: #F3F8FF;
+    position: relative;
+    height: 100vh;
+  }
+  &.max {
+    padding: 85px 0;
+  }
+  &.bg-white {
+    background-color: $primaryClr;
+  }
+  &.bg-blue {
+    background-color: $secondayClr;
+  }
+  &.bg-gray {
+    background-color: #f3f8ff;
+  }
+  &.typ-how-it-works{
+    padding-top: 30px;
+  }
+  &.typ-shipping {
+    padding-top: 10px;
+  }
+  &.typ-sm {
+    padding: 30px 0;
+  }
+  &.typ-xs {
+    padding: 20px 0;
+  }
+  &.typ-account-detail {
+    padding: 20px auto 60px auto;
+  }
+  &.typ-product {
+    padding-bottom: 15px;
+  }
+  &.typ-related-product {
+    padding-top: 0;
+  }
+}
+
+@media only screen and (max-width: $tablet-breakpoint) {
+  .lyt-section {
+    &.typ-banner{
+      padding-top: 75px;
+    }
+    &.typ-shipping {
+      padding-top: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .lyt-section {
+    padding: 30px 0;
+    &.typ-light-blue {
+      height: auto;
+    }
+    &.typ-banner{
+      padding-top: 40px;
+    }
+    &.typ-subscribe{
+      padding-top: 20px;
+      padding-bottom: 25px;
+    }
+  }
+}

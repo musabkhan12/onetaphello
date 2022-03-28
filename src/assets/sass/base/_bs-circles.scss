@@ -1,0 +1,209 @@
+.bs-circles{
+    position: relative;
+    z-index: 2;
+    .circle{
+        border-radius: 50%;
+        background: rgba(255,255,255,0.4);
+        position: absolute;
+        z-index: -1;
+        &.typ-coming-soon {
+            width: 250px;
+            height: 250px;
+            background-color: rgba($color: #225ACB, $alpha: 0.6);
+            bottom: -165px;
+            left: -125px;
+            .inner{
+                background-color: rgba($color: #225ACB, $alpha: 0.8);
+                width: 200px;
+                height: 200px;
+                top: 25px;
+                left: 25px;
+            }
+        }
+        &.top{
+            width: 170px;
+            height: 170px;
+            right: 185px;
+            top: -50px;
+            .inner{
+                width: 100px;
+                height: 100px;
+                &.typ-login{
+                    background-color: rgba($color: #225ACB, $alpha: 0.8);
+                }
+            }
+            &.typ-download{
+                right: -50px;
+                top: -50px;
+            }
+            &.typ-login{
+                right: -40px;
+                top: -25px;
+                width: 130px;
+                height: 130px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba($color: #225ACB, $alpha: 0.6);
+                &.typ-two{
+                    right: -42px;
+                    top: -65px;
+                }
+            }
+        }
+        &.bottom{
+            width: 130px;
+            height: 130px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: 225px;
+            bottom: -50px;
+            .inner{
+                width: 100px;
+                height: 100px;
+                &.typ-login{
+                    background-color: rgba($color: #225ACB, $alpha: 0.8);
+                }
+            }
+            &.typ-download{
+                left: -25px;
+                bottom: -35px;
+            }
+            &.typ-login{
+                display: flex;
+                background-color: rgba($color: #225ACB, $alpha: 0.6);
+                left: -39px;
+                bottom: -35px;
+                &.typ-two{
+                    left: -30px;
+                    bottom: -60px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $xlDesktop-breakpoint){
+    .bs-circles{
+        .circle{
+            &.top{           
+                right: 100px;
+                top: -50px;
+                &.typ-download{
+                    right:  -40px;
+                    top: -50px;
+                }
+                &.typ-login{
+                    right: -45px;
+                    top: -35px;
+                    &.typ-two{
+                        right: -45px;
+                        top: -75px;
+                    }
+                    
+                }
+            }
+            &.bottom{
+                left: 135px;
+                bottom: -45px;
+                &.typ-download{
+                    left: -25px;
+                    bottom: -25px;
+                }
+                &.typ-login{
+                    left: -40px;
+                    bottom: -45px;
+                    &.typ-two{
+                        right: -45px;
+                        bottom: -85px;
+                    }
+                }
+            }
+        }
+    } 
+}
+@media only screen and (max-width: $desktop-breakpoint){
+    .bs-circles {
+        .circle {
+            &.typ-coming-soon {
+                bottom: -200px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: $tablet-breakpoint){
+    .bs-circles{
+        .circle{
+            &.typ-coming-soon {
+                display: none;
+            }
+            &.top{
+                right: -75px;
+                top: -50px;
+                &.typ-download{
+                    right:  -55px;
+                    top: -50px;
+                }
+                &.typ-login{
+                    right: -40px;
+                    top: -40px;
+                    &.typ-two{
+                        right: -50px;
+                        top: -75px;
+                    }
+                }
+            }
+            &.bottom{
+                left: -50px;
+                bottom: -45px;
+                &.typ-download{
+                    left: -25px;
+                    bottom: -25px;
+                }
+                &.typ-login{
+                    left: -45px;
+                    bottom: -40px;
+                    &.typ-two{
+                        left: -50px;
+                        bottom: -75px; 
+                    }
+                }
+            }
+        }
+    } 
+}
+@media only screen and (max-width: $mobile-breakpoint){
+    .bs-circles{
+        .circle{
+            display: none;
+            &.top{
+                right: -50px;
+                top: -50px;
+                &.typ-download{
+                    right: -20%;
+                    top: -25px;
+                }
+                &.typ-login{
+                    display: none;
+                    right: -42px;
+                    top: -40px;
+                }
+            }
+            &.bottom{
+                left: -50px;
+                bottom: -35px;
+                &.typ-download{
+                    display: none;
+                    left: 80%;
+                    bottom: -25px;
+                }
+                &.typ-login{
+                    display: none;
+                    left: -45px;
+                    bottom: -77px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.mod-about-sec {
+  align-items: center;
+  .name {
+    font-size: 28px;
+    font-weight: $font-semibold;
+    color: $secondayClr;
+  }
+  .designation {
+    font-size: 18px;
+    color: $blackClr;
+  }
+  .description {
+    font-size: 16px;
+    color: rgba(0 0 0 / 60%);
+  }
+  .image {
+    padding: 0;
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .mod-about-sec {
+    .name {
+      font-size: 24px;
+    }
+    .designation {
+      font-size: 16px;
+    }
+    .description {
+      font-size: 14px;
+    }
+  }
+}

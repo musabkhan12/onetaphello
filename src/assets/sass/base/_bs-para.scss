@@ -1,0 +1,94 @@
+.bs-para {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 0;
+  &.success {
+    font-weight: $font-semibold;
+    font-size: 14px;
+    color: green;
+  }
+  &.typ-blue {
+    color: $secondayClr;
+  }
+  &.typ-soldout {
+    margin: 15px 0;
+    font-weight: $font-semibold;
+  }
+  &.typ-subtitle{
+    color: rgba($color: $primaryClr, $alpha: 0.8);
+  }
+  &.typ-slide {
+    font-size: 14px;
+  }
+  &.typ-white {
+    color: $primaryClr;
+  }
+  &.typ-enterprise {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+  }
+  &.typ-black {
+    color: $blackClr;
+    font-size: 16px;
+    font-weight: $font-semibold;
+    &.regular {
+      font-weight: $font-regular;
+    }
+    &.typ-margin {
+      margin: 15px 0;
+    }
+  }
+  &.error {
+    margin-bottom: 0;
+    font-size: 14px;
+    // color: #dc3545;
+    color: #f94416;
+  }
+  &.error-message{
+    font-size: 14px;
+    color: #f94416;
+    position: relative;
+    top: -25px;
+    font-weight: $font-semibold;
+    margin-bottom: 5px;
+    text-align: left;
+    &.typ-overlap {
+      top: 5px
+    }
+    &.typ-tc {
+      top: -20px;
+    }
+    &.typ-country {
+      top: 27px;
+      position: absolute;
+    }
+    &.typ-region {
+      top: 27px;
+      position: absolute;
+      left: 53%;
+    }
+  }
+  &.typ-address {
+    word-break: break-all;
+  }
+  &.typ-blog {
+    margin-bottom: 15px;
+    .bold {
+      font-weight: $font-semibold;
+    }
+    .underline {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .bs-para {
+    &.typ-enterprise {
+      width: 100%;
+      font-size: 14px;
+    }
+  }
+}

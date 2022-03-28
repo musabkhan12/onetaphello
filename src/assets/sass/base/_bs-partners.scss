@@ -1,0 +1,27 @@
+.bs-partners {
+  // padding-top: 60px;
+  // background-color: $bgColor;
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .image {
+    height: 50px;
+    text-align: center;
+    img {
+      padding: 0 15px;
+      &.dec {
+        width: 75px;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: $mobile-breakpoint) {
+  .bs-partners {
+    .flex {
+      flex-direction: column;
+    }
+  }
+}
