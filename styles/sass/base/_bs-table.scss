@@ -1,0 +1,73 @@
+.bs-table {
+    &.typ-responsive {
+        thead {
+            tr {
+                td { 
+                    display: table-cell;
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    display: table-cell;
+                }
+            }
+        }
+    }
+    &.table > :not(:first-child) {
+        border-top: 1px solid rgba(0 0 0 /15%);
+    }
+    thead {
+        tr {
+            td {
+                white-space: nowrap;
+                font-weight: $font-semibold;
+                text-align: center;
+                vertical-align: middle;
+            }
+        }
+    }
+    tbody {
+        tr {
+            td {
+                white-space: nowrap;
+                text-align: center;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+    .bs-table {
+        &.typ-responsive {
+            thead {
+                tr {
+                    td {
+                        display: none;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        display: block; 
+                        &:last-child {
+                            &:before {
+                                display: none;
+                            }
+                        }
+                        &:before {
+                            content: attr(data-th)" : ";
+                            font-weight: bold;
+                            width: 6.5em; // magic number :( adjust according to your own content
+                            display: inline-block;
+                            margin-right: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

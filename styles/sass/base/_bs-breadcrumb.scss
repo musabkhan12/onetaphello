@@ -1,0 +1,36 @@
+.bs-breadcrumb{
+    .breadcrumb{
+        background-color: transparent;
+        margin-bottom: 0;
+        padding: 20px 0;
+        padding-bottom: 0;
+        .breadcrumb-item{
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            a{
+                font-size: 14px;
+                color: $blackClr;
+                text-decoration: none;
+                &:hover,&:focus{
+                    text-decoration: none;
+                }
+            }   
+            &.active{
+                color: rgba(0, 0, 0 ,0.6);
+                cursor: default;
+                font-size: 14px;
+            }
+        }
+        .breadcrumb-item + .breadcrumb-item::before{
+            font-family: "icomoon";
+            content: "\e904";
+            font-size: 12px;
+            position: relative;
+            top: 1px;
+        }
+    }
+    &.btm-spacing{
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,54 @@
+.mod-about-banner{
+    .tag-line{
+        .text{
+            padding: 0;
+            .content{
+                font-size: 28px;
+                font-weight: $font-semibold;
+                color: $blackClr;
+            }
+        }
+        .description{
+            padding: 0;
+            font-size: 16px;
+            color: rgba(0 0 0 / 60%);
+        }
+    }
+    .image{
+        padding: 0;
+        img{
+            max-width: 100%;
+        }
+    }
+}
+@media only screen and (max-width:$tablet-breakpoint) {
+    .mod-about-banner{
+        .tag-line{
+            .text{
+                .content{
+                    font-size: 24px;
+                }
+            }
+            .description{
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:$mobile-breakpoint) {
+    .mod-about-banner{
+        .tag-line{
+            .text{
+                padding: auto !important;
+                .content{
+                    font-size: 24px;
+                    font-weight: $font-semibold;
+                    color: $blackClr;
+                }
+            }
+            .description{
+                padding: auto !important;
+            }
+        }
+    }
+}

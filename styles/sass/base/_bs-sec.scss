@@ -1,0 +1,113 @@
+.bs-sec {
+  .content {
+    margin: auto;
+    .bs-heading {
+      text-align: left;
+      margin-bottom: 15px;
+    }
+    .description {
+      font-size: 16px;
+      margin-bottom: 30px;
+      color: rgba(0, 0, 0, 0.6);
+    }
+    &.typ-white {
+      position: relative;
+      .bs-heading {
+        color: $primaryClr;
+        position: relative;
+        &::after {
+          display: none;
+          // display: inline-block;
+          content: url(../../image/dotWhite.svg);
+          position: absolute;
+          top: 0%;
+          right: 25px;
+        }
+      }
+      .description {
+        color: rgba($color: $primaryClr, $alpha: 0.8);
+      }
+      .download-image {
+        a {
+          img{
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+  .image {
+    div {
+      width: auto;
+      height: auto;
+      video {
+        max-width: 100%;
+        height: auto;
+        width: auto;
+      }
+    }
+  }
+  .undordered-lists{
+    margin-top: 15px;
+    list-style: disc;
+    margin-bottom: 0;
+    color: rgba($color: #000000, $alpha: 0.6);
+    &.typ-white{
+      color: rgba($color: #FFF, $alpha: 0.8);
+    }
+    li{
+      margin-bottom: 5px;
+    }
+  }
+}
+
+@media only screen and (max-width: $desktop-breakpoint) {
+  .bs-sec {
+    .content {
+      &.typ-white {
+        .bs-heading {
+          &::after {
+            right: 110px;
+          }
+        }
+      }
+    }
+    
+  }
+}
+@media only screen and (max-width: $tablet-breakpoint) {
+  .bs-sec {
+    .content {
+      &.typ-white {
+        .bs-heading {
+          &::after {
+            top: -10px;
+            right: 3px;
+          }
+        }
+      }
+    }
+    
+  }
+}
+@media only screen and (max-width: $mobile-breakpoint) {
+  .bs-sec {
+    .bs-heading{
+      margin-top: 15px;
+    }
+    .content {
+      width: 100%;
+      margin: 0;
+      &.typ-white {
+        margin: 0;
+        .description{
+          margin-bottom: 7px;
+        }
+        .download-image {
+          display: flex;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}

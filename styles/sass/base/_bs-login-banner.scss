@@ -1,0 +1,32 @@
+.bs-login-banner{
+    width: 40%;
+    margin: 30px auto 70px auto;
+    border-radius: 20px;
+    padding: 40px 0;
+    box-shadow: 0 1px 8px rgb(0 0 0 / 13%);
+    position: relative;
+    overflow: hidden;
+    .login-form{
+        .title{
+            font-size: 28px;
+            color: $secondayClr;
+            text-align: center;
+            font-weight: $font-semibold;
+        }
+    }
+    
+}
+
+@media only screen and (max-width: $desktop-breakpoint) {
+    .bs-login-banner{
+        width: 70%;
+        min-height: auto;
+    }
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+    .bs-login-banner{
+        width: 90%;
+        min-height: auto;
+    }
+}

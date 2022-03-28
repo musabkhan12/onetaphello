@@ -1,0 +1,129 @@
+.bs-modal{
+  .modal-overlay{
+    background: rgba($color: #000000, $alpha: 0.1);
+  }
+  .modal-container{
+    overflow: inherit !important;
+      .modal-inner{
+        text-align: center;
+        min-width: 360px;
+        min-height: 250px;
+        padding: 60px 40px;
+        border-radius: 15px;
+        box-shadow: none;
+          &.typ-thank-you{
+            padding: 60px 10px 30px 10px;
+          }
+          &.typ-confirm {
+            min-width: auto;
+            min-height: auto;
+            padding: 15px;
+            .confirm-button {
+              margin-top: 15px;
+              display: flex;
+              justify-content: space-evenly;
+            }
+          }
+          .modal-popup{
+              .heading{
+                font-size: 18px;
+                font-weight: $font-semibold;
+                margin-bottom: 30px;
+              }
+              .rating-stars{
+                margin-bottom: 15px;
+                .star-container {
+                  input {
+                    top: 0px;
+                    left: 25px;
+                  }
+                }  
+              }
+              .bs-btn.typ-sm{
+                margin-bottom: 0;
+              }
+          }
+          .modal-thank-you{
+              .thanks-image{
+                margin-bottom: 30px;
+                .image{
+                  max-height: 216px;
+                }
+              }
+              .thank-you-message{
+                margin-bottom: 0;
+                color: rgba($color: #000000, $alpha: 0.6);
+                font-size: 16px;
+              }
+          }
+          .modal-close-button{
+              .modal-close-icon{
+
+              }
+          }
+      }
+  }
+  &.typ-phone-number {
+    .bs-heading {
+      color: $secondayClr;
+      font-size: 24px;
+    }
+    .modal-container {
+      .modal-inner {
+        padding: 60px 15px;
+        overflow: hidden;
+        .PhoneInput {
+          input {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+  &.typ-activation {    
+    .modal-container{
+      .modal-inner {
+        box-shadow: none;
+        border-radius: 15px;
+        padding: 30px;
+      }
+    }
+  }
+  &.typ-loader {
+    .react-responsive-modal-closeButton {
+      display: none;
+    }
+  }
+  
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .bs-modal{
+    .modal-container{
+        .modal-inner{
+          min-width: 280px;
+          margin: 0;
+          padding: 60px 0px;
+            &.typ-thank-you{
+              padding: 60px 10px 30px 10px;
+            }
+        }
+    }
+    &.typ-activation {
+      .modal-container{
+        .modal-inner {
+          box-shadow: none;
+          border-radius: 15px;
+          width: 50vw;
+          height: 80vh;
+          padding: 30px;
+        }
+      }
+    }
+    &.typ-loader {
+      .bs-form {
+        padding: 0 15px;
+      }
+    }
+  }
+}

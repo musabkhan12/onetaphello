@@ -1,0 +1,222 @@
+.bs-feature {
+  padding: 0;
+  .bs-heading{
+    text-align: left;
+  }
+  .lists-features{
+    padding-left: 0;
+    .list-item{
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
+      position: relative;
+      .list-icon{
+        position: absolute;
+        .icon{
+          font-size: 24px;
+          color: $secondayClr;
+          &.icon-mobile{
+            font-size: 32px;
+            position: relative;
+            left: 3px;
+          }
+          &.icon-language {
+            font-size: 30px;
+          }
+          &.icon-credit-card{
+            font-size: 16px;
+          }
+          &.icon-monitor{
+            font-size: 20px;
+          }
+        }
+      }
+      .content{
+        color: $baseClr;
+        margin-left: 50px;
+        font-size: 14px;
+        font-weight: $font-semibold;
+      }
+    }
+  }
+  //features in about us
+  .highlights {
+    padding: 0;
+    margin: 0;
+    .content {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      align-items: center;
+      padding: 5px 7px;
+      border: 1px solid $primaryClr;
+      border-radius: 55px;
+      margin: 30px 0;
+      box-shadow: 0px 0px 6px rgb(0 0 0 /16%);
+      &:nth-child(1) {
+        margin-left: auto;
+      }
+      &:nth-child(2) {
+        margin: auto;
+      }
+      &:nth-child(3) {
+        margin-left: auto;
+        margin-bottom: 0;
+      }
+      span {
+        margin-right: 10px;
+        margin-bottom: 0;
+        margin-left: 10px;
+        order: 1;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.6);
+      }
+      .image {
+        order: 2;
+        .img-border {
+          width: 80px;
+          height: 80px;
+          border: 1px solid $secondayClr;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .background {
+            width: 70px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $secondayClr;
+            border-radius: 50%;
+            .icon {
+              color: $primaryClr;
+              font-size: 25px;
+              &.icon-credit-card {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+    &.typ-right {
+      .content {
+        &:nth-child(1) {
+          margin-left: 0;
+        }
+        &:nth-child(2) {
+          margin: auto;
+        }
+        &:nth-child(3) {
+          margin-left: 0;
+        }
+        span {
+          order: 2;
+        }
+      }
+      .image {
+        order: 1;
+      }
+    }
+  }
+  .banner {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    img {
+      max-width: 100%;
+      object-fit: contain;
+    }
+  }
+}
+@media only screen and (max-width: $desktop-breakpoint) {
+  .bs-feature {
+    .highlights {
+      .content {
+        width: 100%;
+    
+      }
+    }
+  }  
+}
+@media only screen and (max-width: $tablet-breakpoint) {
+  .bs-feature {
+    .lists-features{
+      .list-item{
+        .list-icon{
+          .icon{
+            font-size: 18px;
+            color: $secondayClr;
+            &.icon-mobile{
+              font-size: 20px;
+            }
+            &.icon-language {
+              font-size: 22px;
+            }
+            &.icon-credit-card{
+              font-size: 12px;
+            }
+            &.icon-monitor{
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+    .highlights {
+      width: 70%;
+      margin: auto;
+      .content {
+        justify-content: start;
+        padding: 5px;
+        margin: 25px 0;
+        &:nth-child(1) {
+          margin-top: 0;
+        }
+        span {
+          order: 2;
+        }
+        .image {
+          order: 1;
+        }
+      }
+    }
+    .banner {
+      width: 70%;
+      margin: 25px auto;
+    }
+  }
+}
+@media only screen and (max-width: $mobile-breakpoint) {
+  .bs-feature {
+    .bs-heading{
+      margin-top: 20px;
+    }   
+    .lists-features {
+      .list-item {
+        .list-icon {
+          .icon {
+            &.icon-mobile {
+              position: relative;
+              left: 3px;
+            }
+            &.icon-language {
+              font-size: 20px;
+            }
+          }
+        }
+        .content {
+          margin-left: 30px;
+        }
+      }
+    }  
+    .highlights {
+      width: 90%;
+      margin: auto;
+    }
+    .banner {
+      width: 90%;
+    }
+  }
+}

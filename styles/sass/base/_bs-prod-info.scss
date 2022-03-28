@@ -1,0 +1,45 @@
+.bs-prod-info {
+  position: relative;
+  .title {
+    font-size: 22px;
+    color: $blackClr;
+    margin-bottom: 10px;
+    font-weight: $font-semibold;
+  }
+  .subtitle {
+    font-size: 18px;
+    color: $blackClr;
+    margin-bottom: 10px;
+  }
+  .actn-btns {
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .bs-prod-info {
+    padding-left: 0;
+    .title, 
+    .subtitle {
+      font-size: 16px;
+    }
+    .actn-btns {
+      display: flex;
+      justify-content: center;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      margin: 0;
+      z-index: 10;
+      width: 100%;
+      .bs-btn {
+        border-radius: 0;
+        margin: 0;
+        width: 50%;
+      }
+    }
+  }
+}
